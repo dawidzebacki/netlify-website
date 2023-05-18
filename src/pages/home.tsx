@@ -14,12 +14,16 @@ const HomePage: NextPage<Props> = ({ content }) => {
     <>
       <h1>{attributes.hero_title}</h1>
       <p>{attributes.hero_description}</p>
-      <img src={attributes.hero_image} alt="hero" />
+      <img
+        src={`/${attributes.hero_image}`}
+        alt="hero"
+        style={{ width: '200px' }}
+      />
     </>
   );
 };
 export const getStaticProps: GetStaticProps = async () => {
-  const content = await import(`../content/pages/${'home'}.md`);
+  const content = await import(`../../content/pages/${'home'}.md`);
   return { props: { content: content.default } };
 };
 export default HomePage;
