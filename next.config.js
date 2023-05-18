@@ -4,6 +4,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.md$/,
+      loader: 'frontmatter-markdown-loader',
+    });
+    return config;
+  },
   eslint: {
     dirs: ['.'],
   },
