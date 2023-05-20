@@ -1,0 +1,5 @@
+@use "@/styles/display";
+
+.content-wrapper {
+  @include display.default-wrapper;
+}

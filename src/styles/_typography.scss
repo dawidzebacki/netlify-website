@@ -1,0 +1,17 @@
+@mixin sm-semibold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+@mixin sm-medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin sm-regular {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}

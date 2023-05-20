@@ -1,0 +1,44 @@
+@use "@/styles/colors";
+@use "@/styles/typography";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.wrapper {
+  background-color: lightcyan;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.navbar {
+  background-color: aqua;
+  padding: 10px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-list-item {
+  background-color: aquamarine;
+  padding: 5px;
+  color: colors.$primary;
+
+  &--active {
+    background-color: lightsalmon;
+    color: colors.$secondary;
+  }
+
+  &:hover {
+    border-bottom: none;
+    background-color: beige;
+  }
+}

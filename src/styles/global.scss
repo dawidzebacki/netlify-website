@@ -1,0 +1,14 @@
+@use "./colors";
+@use "./typography";
+
+* {
+  font-family: "Arial";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  @include typography.sm-regular;
+}
+
+body {
+  background-color: gainsboro;
+}
