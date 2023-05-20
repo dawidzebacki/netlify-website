@@ -2,8 +2,8 @@ export default {
   cms_manual_init: true,
   backend: {
     name: 'github',
-    repo: 'dawidzebacki/netlify-website',
-    branch: 'main',
+    repo: 'dawidzebacki/BrandDevs',
+    branch: 'master',
   },
   media_folder: 'public/img',
   public_folder: 'img',
